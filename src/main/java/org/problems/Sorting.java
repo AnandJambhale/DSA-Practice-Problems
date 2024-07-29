@@ -51,12 +51,12 @@ public class Sorting {
         int[] arrAns = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             int multiplication = 1;
-            for (int j = i+1; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 multiplication *= arr[j];
             }
             arrL[i] = multiplication;
         }
-        for (int i = arr.length-1; i >= 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             int multiplication = 1;
             for (int j = 0; j < i; j++) {
                 multiplication *= arr[j];
